@@ -1,11 +1,95 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Monolith",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monolith",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dimdoorsretorn/client/renderer/MonolithRenderer.java",
+          "src/main/resources/assets/dimdoors_retorn/models/item/monolith_spawn_egg.json",
+          "src/main/java/net/mcreator/dimdoorsretorn/entity/MonolithEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BlackVoid",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_void",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dimdoors_retorn/worldgen/biome/black_void.json"
+        ]
+      }
+    },
+    {
+      "name": "DungeonPockets",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dungeon_pockets",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dimdoors_retorn/dimension_type/dungeon_pockets.json",
+          "src/main/resources/data/dimdoors_retorn/dimension/dungeon_pockets.json",
+          "src/main/java/net/mcreator/dimdoorsretorn/world/dimension/DungeonPocketsDimension.java"
+        ]
+      }
+    },
+    {
+      "name": "FabricOfReality",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fabric_of_reality",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dimdoors_retorn/blockstates/fabric_of_reality.json",
+          "src/main/resources/data/dimdoors_retorn/loot_tables/blocks/fabric_of_reality.json",
+          "src/main/resources/assets/dimdoors_retorn/models/block/fabric_of_reality.json",
+          "src/main/java/net/mcreator/dimdoorsretorn/block/FabricOfRealityBlock.java",
+          "src/main/resources/assets/dimdoors_retorn/models/item/fabric_of_reality.json"
+        ]
+      }
+    },
+    {
+      "name": "OnPlayerDimensionChange",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_dimension_change",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dimdoorsretorn/procedures/OnPlayerDimensionChangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "dimension",
+            "type": "dimensiontype"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.dimdoors_retorn.black_void": "Black Void",
+      "entity.dimdoors_retorn.monolith": "Monolith",
+      "item.dimdoors_retorn.monolith_spawn_egg": "Monolith Spawn Egg",
+      "block.dimdoors_retorn.fabric_of_reality": "Fabric Of Reality"
+    }
   },
   "foldersRoot": {
     "name": "~",

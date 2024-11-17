@@ -17,6 +17,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.dimdoorsretorn.init.DimdoorsRetornModTabs;
+import net.mcreator.dimdoorsretorn.init.DimdoorsRetornModItems;
+import net.mcreator.dimdoorsretorn.init.DimdoorsRetornModEntities;
+import net.mcreator.dimdoorsretorn.init.DimdoorsRetornModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -36,6 +41,13 @@ public class DimdoorsRetornMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		DimdoorsRetornModBlocks.REGISTRY.register(bus);
+
+		DimdoorsRetornModItems.REGISTRY.register(bus);
+		DimdoorsRetornModEntities.REGISTRY.register(bus);
+
+		DimdoorsRetornModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

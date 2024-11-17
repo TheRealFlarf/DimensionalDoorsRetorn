@@ -1,1 +1,6 @@
-{}
+{
+  "biome.dimdoors_retorn.black_void": "Black Void",
+  "entity.dimdoors_retorn.monolith": "Monolith",
+  "item.dimdoors_retorn.monolith_spawn_egg": "Monolith Spawn Egg",
+  "block.dimdoors_retorn.fabric_of_reality": "Fabric Of Reality"
+}
